@@ -141,6 +141,7 @@ namespace VISTA
             this.btnSALIR.TabIndex = 4;
             this.btnSALIR.Text = "Salir";
             this.btnSALIR.UseVisualStyleBackColor = true;
+            this.btnSALIR.Click += new System.EventHandler(this.btnSALIR_Click);
             // 
             // btnMODIFICAR
             // 
@@ -150,6 +151,7 @@ namespace VISTA
             this.btnMODIFICAR.TabIndex = 3;
             this.btnMODIFICAR.Text = "Modificar";
             this.btnMODIFICAR.UseVisualStyleBackColor = true;
+            this.btnMODIFICAR.Click += new System.EventHandler(this.btnMODIFICAR_Click);
             // 
             // btnELIMINAR
             // 
@@ -159,6 +161,7 @@ namespace VISTA
             this.btnELIMINAR.TabIndex = 2;
             this.btnELIMINAR.Text = "Eliminar";
             this.btnELIMINAR.UseVisualStyleBackColor = true;
+            this.btnELIMINAR.Click += new System.EventHandler(this.btnELIMINAR_Click);
             // 
             // btnCONSULTAR
             // 
@@ -168,6 +171,7 @@ namespace VISTA
             this.btnCONSULTAR.TabIndex = 1;
             this.btnCONSULTAR.Text = "Consultar";
             this.btnCONSULTAR.UseVisualStyleBackColor = true;
+            this.btnCONSULTAR.Click += new System.EventHandler(this.btnCONSULTAR_Click);
             // 
             // btnAGREGAR
             // 
@@ -177,6 +181,7 @@ namespace VISTA
             this.btnAGREGAR.TabIndex = 0;
             this.btnAGREGAR.Text = "Agregar";
             this.btnAGREGAR.UseVisualStyleBackColor = true;
+            this.btnAGREGAR.Click += new System.EventHandler(this.btnAGREGAR_Click);
             // 
             // tbxDOMICILIO
             // 
@@ -221,6 +226,7 @@ namespace VISTA
             this.txtGUARDAR.TabIndex = 5;
             this.txtGUARDAR.Text = "Guardar";
             this.txtGUARDAR.UseVisualStyleBackColor = true;
+            this.txtGUARDAR.Click += new System.EventHandler(this.txtGUARDAR_Click);
             // 
             // btnCANCELAR
             // 
@@ -230,6 +236,7 @@ namespace VISTA
             this.btnCANCELAR.TabIndex = 6;
             this.btnCANCELAR.Text = "Cancelar";
             this.btnCANCELAR.UseVisualStyleBackColor = true;
+            this.btnCANCELAR.Click += new System.EventHandler(this.btnCANCELAR_Click);
             // 
             // lblNOMBRE
             // 
