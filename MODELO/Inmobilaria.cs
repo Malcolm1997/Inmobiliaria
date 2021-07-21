@@ -8,6 +8,7 @@ namespace MODELO
 {
     public class Inmobilaria
     {
+
         float _precio;
         public float precio_m2
         {
@@ -15,6 +16,7 @@ namespace MODELO
             {
                 return _precio;
             }
+
             set
             {
                 _precio = value;

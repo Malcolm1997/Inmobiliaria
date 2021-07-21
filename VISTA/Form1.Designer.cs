@@ -31,6 +31,18 @@ namespace VISTA
         {
             this.dgwALQUILERES = new System.Windows.Forms.DataGridView();
             this.gbxCARGA = new System.Windows.Forms.GroupBox();
+            this.lblDESCUBIERTA = new System.Windows.Forms.Label();
+            this.lblCUBIERTA = new System.Windows.Forms.Label();
+            this.lblTELEFONO = new System.Windows.Forms.Label();
+            this.lblDOMICILIO = new System.Windows.Forms.Label();
+            this.lblNOMBRE = new System.Windows.Forms.Label();
+            this.btnCANCELAR = new System.Windows.Forms.Button();
+            this.txtGUARDAR = new System.Windows.Forms.Button();
+            this.tbxDESCUBIERTA = new System.Windows.Forms.TextBox();
+            this.tbxCUBIERTA = new System.Windows.Forms.TextBox();
+            this.tbxNOMBRE = new System.Windows.Forms.TextBox();
+            this.tbxTELEFONO = new System.Windows.Forms.TextBox();
+            this.tbxDOMICILIO = new System.Windows.Forms.TextBox();
             this.pnlTIPO = new System.Windows.Forms.Panel();
             this.rbtCASA = new System.Windows.Forms.RadioButton();
             this.rbtDEPARTAMENTO = new System.Windows.Forms.RadioButton();
@@ -40,18 +52,8 @@ namespace VISTA
             this.btnELIMINAR = new System.Windows.Forms.Button();
             this.btnCONSULTAR = new System.Windows.Forms.Button();
             this.btnAGREGAR = new System.Windows.Forms.Button();
-            this.tbxDOMICILIO = new System.Windows.Forms.TextBox();
-            this.tbxTELEFONO = new System.Windows.Forms.TextBox();
-            this.tbxNOMBRE = new System.Windows.Forms.TextBox();
-            this.tbxCUBIERTA = new System.Windows.Forms.TextBox();
-            this.tbxDESCUBIERTA = new System.Windows.Forms.TextBox();
-            this.txtGUARDAR = new System.Windows.Forms.Button();
-            this.btnCANCELAR = new System.Windows.Forms.Button();
-            this.lblNOMBRE = new System.Windows.Forms.Label();
-            this.lblDOMICILIO = new System.Windows.Forms.Label();
-            this.lblTELEFONO = new System.Windows.Forms.Label();
-            this.lblCUBIERTA = new System.Windows.Forms.Label();
-            this.lblDESCUBIERTA = new System.Windows.Forms.Label();
+            this.btnASIGNAR = new System.Windows.Forms.Button();
+            this.tbxASIGNAR = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgwALQUILERES)).BeginInit();
             this.gbxCARGA.SuspendLayout();
             this.pnlTIPO.SuspendLayout();
@@ -88,6 +90,106 @@ namespace VISTA
             this.gbxCARGA.TabStop = false;
             this.gbxCARGA.Text = "Carga de Datos";
             // 
+            // lblDESCUBIERTA
+            // 
+            this.lblDESCUBIERTA.AutoSize = true;
+            this.lblDESCUBIERTA.Location = new System.Drawing.Point(40, 407);
+            this.lblDESCUBIERTA.Name = "lblDESCUBIERTA";
+            this.lblDESCUBIERTA.Size = new System.Drawing.Size(114, 13);
+            this.lblDESCUBIERTA.TabIndex = 11;
+            this.lblDESCUBIERTA.Text = "Superficie Descubierta";
+            // 
+            // lblCUBIERTA
+            // 
+            this.lblCUBIERTA.AutoSize = true;
+            this.lblCUBIERTA.Location = new System.Drawing.Point(40, 332);
+            this.lblCUBIERTA.Name = "lblCUBIERTA";
+            this.lblCUBIERTA.Size = new System.Drawing.Size(96, 13);
+            this.lblCUBIERTA.TabIndex = 10;
+            this.lblCUBIERTA.Text = "Superficie Cubierta";
+            // 
+            // lblTELEFONO
+            // 
+            this.lblTELEFONO.AutoSize = true;
+            this.lblTELEFONO.Location = new System.Drawing.Point(40, 250);
+            this.lblTELEFONO.Name = "lblTELEFONO";
+            this.lblTELEFONO.Size = new System.Drawing.Size(49, 13);
+            this.lblTELEFONO.TabIndex = 9;
+            this.lblTELEFONO.Text = "Telefono";
+            // 
+            // lblDOMICILIO
+            // 
+            this.lblDOMICILIO.AutoSize = true;
+            this.lblDOMICILIO.Location = new System.Drawing.Point(40, 100);
+            this.lblDOMICILIO.Name = "lblDOMICILIO";
+            this.lblDOMICILIO.Size = new System.Drawing.Size(49, 13);
+            this.lblDOMICILIO.TabIndex = 8;
+            this.lblDOMICILIO.Text = "Domicilio";
+            // 
+            // lblNOMBRE
+            // 
+            this.lblNOMBRE.AutoSize = true;
+            this.lblNOMBRE.Location = new System.Drawing.Point(40, 175);
+            this.lblNOMBRE.Name = "lblNOMBRE";
+            this.lblNOMBRE.Size = new System.Drawing.Size(44, 13);
+            this.lblNOMBRE.TabIndex = 7;
+            this.lblNOMBRE.Text = "Nombre";
+            // 
+            // btnCANCELAR
+            // 
+            this.btnCANCELAR.Location = new System.Drawing.Point(279, 551);
+            this.btnCANCELAR.Name = "btnCANCELAR";
+            this.btnCANCELAR.Size = new System.Drawing.Size(134, 32);
+            this.btnCANCELAR.TabIndex = 6;
+            this.btnCANCELAR.Text = "Cancelar";
+            this.btnCANCELAR.UseVisualStyleBackColor = true;
+            this.btnCANCELAR.Click += new System.EventHandler(this.btnCANCELAR_Click);
+            // 
+            // txtGUARDAR
+            // 
+            this.txtGUARDAR.Location = new System.Drawing.Point(6, 551);
+            this.txtGUARDAR.Name = "txtGUARDAR";
+            this.txtGUARDAR.Size = new System.Drawing.Size(134, 32);
+            this.txtGUARDAR.TabIndex = 5;
+            this.txtGUARDAR.Text = "Guardar";
+            this.txtGUARDAR.UseVisualStyleBackColor = true;
+            this.txtGUARDAR.Click += new System.EventHandler(this.txtGUARDAR_Click);
+            // 
+            // tbxDESCUBIERTA
+            // 
+            this.tbxDESCUBIERTA.Location = new System.Drawing.Point(280, 400);
+            this.tbxDESCUBIERTA.Name = "tbxDESCUBIERTA";
+            this.tbxDESCUBIERTA.Size = new System.Drawing.Size(100, 20);
+            this.tbxDESCUBIERTA.TabIndex = 5;
+            // 
+            // tbxCUBIERTA
+            // 
+            this.tbxCUBIERTA.Location = new System.Drawing.Point(280, 325);
+            this.tbxCUBIERTA.Name = "tbxCUBIERTA";
+            this.tbxCUBIERTA.Size = new System.Drawing.Size(100, 20);
+            this.tbxCUBIERTA.TabIndex = 4;
+            // 
+            // tbxNOMBRE
+            // 
+            this.tbxNOMBRE.Location = new System.Drawing.Point(280, 175);
+            this.tbxNOMBRE.Name = "tbxNOMBRE";
+            this.tbxNOMBRE.Size = new System.Drawing.Size(100, 20);
+            this.tbxNOMBRE.TabIndex = 3;
+            // 
+            // tbxTELEFONO
+            // 
+            this.tbxTELEFONO.Location = new System.Drawing.Point(280, 250);
+            this.tbxTELEFONO.Name = "tbxTELEFONO";
+            this.tbxTELEFONO.Size = new System.Drawing.Size(100, 20);
+            this.tbxTELEFONO.TabIndex = 2;
+            // 
+            // tbxDOMICILIO
+            // 
+            this.tbxDOMICILIO.Location = new System.Drawing.Point(280, 100);
+            this.tbxDOMICILIO.Name = "tbxDOMICILIO";
+            this.tbxDOMICILIO.Size = new System.Drawing.Size(100, 20);
+            this.tbxDOMICILIO.TabIndex = 1;
+            // 
             // pnlTIPO
             // 
             this.pnlTIPO.Controls.Add(this.rbtCASA);
@@ -107,6 +209,7 @@ namespace VISTA
             this.rbtCASA.TabStop = true;
             this.rbtCASA.Text = "Casa";
             this.rbtCASA.UseVisualStyleBackColor = true;
+            this.rbtCASA.CheckedChanged += new System.EventHandler(this.rbtCASA_CheckedChanged);
             // 
             // rbtDEPARTAMENTO
             // 
@@ -118,6 +221,7 @@ namespace VISTA
             this.rbtDEPARTAMENTO.TabStop = true;
             this.rbtDEPARTAMENTO.Text = "Departamento";
             this.rbtDEPARTAMENTO.UseVisualStyleBackColor = true;
+            this.rbtDEPARTAMENTO.CheckedChanged += new System.EventHandler(this.rbtDEPARTAMENTO_CheckedChanged);
             // 
             // gbxACCIONES
             // 
@@ -183,116 +287,36 @@ namespace VISTA
             this.btnAGREGAR.UseVisualStyleBackColor = true;
             this.btnAGREGAR.Click += new System.EventHandler(this.btnAGREGAR_Click);
             // 
-            // tbxDOMICILIO
+            // btnASIGNAR
             // 
-            this.tbxDOMICILIO.Location = new System.Drawing.Point(280, 100);
-            this.tbxDOMICILIO.Name = "tbxDOMICILIO";
-            this.tbxDOMICILIO.Size = new System.Drawing.Size(100, 20);
-            this.tbxDOMICILIO.TabIndex = 1;
+            this.btnASIGNAR.Location = new System.Drawing.Point(12, 608);
+            this.btnASIGNAR.Name = "btnASIGNAR";
+            this.btnASIGNAR.Size = new System.Drawing.Size(971, 30);
+            this.btnASIGNAR.TabIndex = 5;
+            this.btnASIGNAR.Text = "Asignar Valor al M2";
+            this.btnASIGNAR.UseVisualStyleBackColor = true;
+            this.btnASIGNAR.Click += new System.EventHandler(this.btnASIGNAR_Click);
             // 
-            // tbxTELEFONO
+            // tbxASIGNAR
             // 
-            this.tbxTELEFONO.Location = new System.Drawing.Point(280, 250);
-            this.tbxTELEFONO.Name = "tbxTELEFONO";
-            this.tbxTELEFONO.Size = new System.Drawing.Size(100, 20);
-            this.tbxTELEFONO.TabIndex = 2;
-            // 
-            // tbxNOMBRE
-            // 
-            this.tbxNOMBRE.Location = new System.Drawing.Point(280, 175);
-            this.tbxNOMBRE.Name = "tbxNOMBRE";
-            this.tbxNOMBRE.Size = new System.Drawing.Size(100, 20);
-            this.tbxNOMBRE.TabIndex = 3;
-            // 
-            // tbxCUBIERTA
-            // 
-            this.tbxCUBIERTA.Location = new System.Drawing.Point(280, 325);
-            this.tbxCUBIERTA.Name = "tbxCUBIERTA";
-            this.tbxCUBIERTA.Size = new System.Drawing.Size(100, 20);
-            this.tbxCUBIERTA.TabIndex = 4;
-            // 
-            // tbxDESCUBIERTA
-            // 
-            this.tbxDESCUBIERTA.Location = new System.Drawing.Point(280, 400);
-            this.tbxDESCUBIERTA.Name = "tbxDESCUBIERTA";
-            this.tbxDESCUBIERTA.Size = new System.Drawing.Size(100, 20);
-            this.tbxDESCUBIERTA.TabIndex = 5;
-            // 
-            // txtGUARDAR
-            // 
-            this.txtGUARDAR.Location = new System.Drawing.Point(6, 551);
-            this.txtGUARDAR.Name = "txtGUARDAR";
-            this.txtGUARDAR.Size = new System.Drawing.Size(134, 32);
-            this.txtGUARDAR.TabIndex = 5;
-            this.txtGUARDAR.Text = "Guardar";
-            this.txtGUARDAR.UseVisualStyleBackColor = true;
-            this.txtGUARDAR.Click += new System.EventHandler(this.txtGUARDAR_Click);
-            // 
-            // btnCANCELAR
-            // 
-            this.btnCANCELAR.Location = new System.Drawing.Point(279, 551);
-            this.btnCANCELAR.Name = "btnCANCELAR";
-            this.btnCANCELAR.Size = new System.Drawing.Size(134, 32);
-            this.btnCANCELAR.TabIndex = 6;
-            this.btnCANCELAR.Text = "Cancelar";
-            this.btnCANCELAR.UseVisualStyleBackColor = true;
-            this.btnCANCELAR.Click += new System.EventHandler(this.btnCANCELAR_Click);
-            // 
-            // lblNOMBRE
-            // 
-            this.lblNOMBRE.AutoSize = true;
-            this.lblNOMBRE.Location = new System.Drawing.Point(40, 175);
-            this.lblNOMBRE.Name = "lblNOMBRE";
-            this.lblNOMBRE.Size = new System.Drawing.Size(44, 13);
-            this.lblNOMBRE.TabIndex = 7;
-            this.lblNOMBRE.Text = "Nombre";
-            // 
-            // lblDOMICILIO
-            // 
-            this.lblDOMICILIO.AutoSize = true;
-            this.lblDOMICILIO.Location = new System.Drawing.Point(40, 100);
-            this.lblDOMICILIO.Name = "lblDOMICILIO";
-            this.lblDOMICILIO.Size = new System.Drawing.Size(49, 13);
-            this.lblDOMICILIO.TabIndex = 8;
-            this.lblDOMICILIO.Text = "Domicilio";
-            // 
-            // lblTELEFONO
-            // 
-            this.lblTELEFONO.AutoSize = true;
-            this.lblTELEFONO.Location = new System.Drawing.Point(40, 250);
-            this.lblTELEFONO.Name = "lblTELEFONO";
-            this.lblTELEFONO.Size = new System.Drawing.Size(49, 13);
-            this.lblTELEFONO.TabIndex = 9;
-            this.lblTELEFONO.Text = "Telefono";
-            // 
-            // lblCUBIERTA
-            // 
-            this.lblCUBIERTA.AutoSize = true;
-            this.lblCUBIERTA.Location = new System.Drawing.Point(40, 332);
-            this.lblCUBIERTA.Name = "lblCUBIERTA";
-            this.lblCUBIERTA.Size = new System.Drawing.Size(96, 13);
-            this.lblCUBIERTA.TabIndex = 10;
-            this.lblCUBIERTA.Text = "Superficie Cubierta";
-            // 
-            // lblDESCUBIERTA
-            // 
-            this.lblDESCUBIERTA.AutoSize = true;
-            this.lblDESCUBIERTA.Location = new System.Drawing.Point(40, 407);
-            this.lblDESCUBIERTA.Name = "lblDESCUBIERTA";
-            this.lblDESCUBIERTA.Size = new System.Drawing.Size(114, 13);
-            this.lblDESCUBIERTA.TabIndex = 11;
-            this.lblDESCUBIERTA.Text = "Superficie Descubierta";
+            this.tbxASIGNAR.Location = new System.Drawing.Point(989, 614);
+            this.tbxASIGNAR.Name = "tbxASIGNAR";
+            this.tbxASIGNAR.Size = new System.Drawing.Size(158, 20);
+            this.tbxASIGNAR.TabIndex = 12;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1159, 614);
+            this.ClientSize = new System.Drawing.Size(1159, 650);
+            this.Controls.Add(this.tbxASIGNAR);
+            this.Controls.Add(this.btnASIGNAR);
             this.Controls.Add(this.gbxACCIONES);
             this.Controls.Add(this.gbxCARGA);
             this.Controls.Add(this.dgwALQUILERES);
             this.Name = "Form1";
             this.Text = "      ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwALQUILERES)).EndInit();
             this.gbxCARGA.ResumeLayout(false);
             this.gbxCARGA.PerformLayout();
@@ -300,6 +324,7 @@ namespace VISTA
             this.pnlTIPO.PerformLayout();
             this.gbxACCIONES.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -328,6 +353,8 @@ namespace VISTA
         private System.Windows.Forms.Label lblTELEFONO;
         private System.Windows.Forms.Label lblDOMICILIO;
         private System.Windows.Forms.Label lblNOMBRE;
+        private System.Windows.Forms.Button btnASIGNAR;
+        private System.Windows.Forms.TextBox tbxASIGNAR;
     }
 }
 

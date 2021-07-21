@@ -8,7 +8,7 @@ namespace MODELO
 {
     public class Propiedad
     {
-        public Inmobilaria inmobiliaria = new Inmobilaria();
+        public Inmobilaria inmobiliaria { get; set; }
         public string domicilioPropiedad { get; set; }
 
         public string nombrePropietario { get; set; }
@@ -16,6 +16,10 @@ namespace MODELO
         public int telefono { get; set; }
 
         public int superficieCubierta { get; set; }
+         
+        public float importe { get; set; }
+
+
     }
 
     public class Casa: Propiedad
@@ -30,7 +34,7 @@ namespace MODELO
             }
         }
 
-        float calcularValor(float supCubierta, float supDescubierta)
+        public float calcularValor(float supCubierta, float supDescubierta)
         {
             float valorPropiedad = 0;
             
